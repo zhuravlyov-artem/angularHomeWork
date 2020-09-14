@@ -1,0 +1,3 @@
+<div class="film-list">
+  <app-film-item *ngFor="let film of films" [filmItem]="film" (message)="onEvent($event)"></app-film-item>
+</div>

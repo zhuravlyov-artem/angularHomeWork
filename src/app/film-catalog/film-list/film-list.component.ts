@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FilmService } from '../film.service';
+import { FilmItemComponent } from '../film-item/film-item.component';
 
 @Component({
-  selector: '.films',
-  templateUrl: './films.component.html',
-  styleUrls: ['./films.component.css']
+  selector: 'app-film-list',
+  templateUrl: './film-list.component.html',
+  styleUrls: ['./film-list.component.css']
 })
-export class FilmsComponent implements OnInit {
+export class FilmListComponent implements OnInit {
 
   description: string = 'Middle card description';
   films: object[];
@@ -17,5 +18,8 @@ export class FilmsComponent implements OnInit {
 
   ngOnInit() {
     this.films = this.filmsService.getFilms();
+  }
+  onEvent(event) {
+    console.log(event)
   }
 }
