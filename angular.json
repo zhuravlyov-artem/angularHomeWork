@@ -118,5 +118,8 @@
       }
     }
   },
-  "defaultProject": "jsexpert-chat-bot"
+  "defaultProject": "jsexpert-chat-bot",
+  "cli": {
+    "analytics": "3aa963c3-ff37-478e-b1bf-7d08a7cf42b8"
+  }
 }
